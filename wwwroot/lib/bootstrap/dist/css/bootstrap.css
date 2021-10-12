@@ -7,7 +7,7 @@
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #a5a5b1;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -417,6 +417,7 @@ h6, .h6 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+ color: #1e7e34
 }
 
 hr {
@@ -6587,8 +6588,8 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
-.bg-white {
-  background-color: #fff !important;
+.bg-purple {
+    background-color: #a5a5b1 !important;
 }
 
 .bg-transparent {
@@ -6608,7 +6609,7 @@ button.bg-dark:focus {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 0 solid #b5b6be !important;
 }
 
 .border-left {

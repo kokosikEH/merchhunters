@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Account";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>your id/ age/ books.</p>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    @using (Html.BeginForm("Account", "Home"))
+    {
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control" name="ID" placeholder="Your ID" aria-label="ID" aria-describedby="addon-wrapping">
+        </div>
+        <button type="submit" class="btn btn-1">LogIn</button>
+
+    }
+}
+else
+{
+    <h1>Respect @User.Identity.Name</h1>
+
+    @using (Html.BeginForm("LogOut", "Home"))
+    {
+        <button type="submit" class="btn btn-1">LogOut</button>
+       
+    }
+
+}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using merchhunters.Common.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace merchhunters.DAL.DalContracts
 {
     interface ISelector
     {
-        Array<Recomendation> Select(Request request);
+        Recomendation[] Select(Request request);
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using merchhunters.Common.Entities;
+using merchhunters.DAL.DalContracts;
+using System;
 
 namespace DAL
 {
@@ -6,6 +8,11 @@ namespace DAL
     {
         public MockSelector()
         {
+        }
+
+        public Recomendation[] Select(Request request)
+        {
+            throw new NotImplementedException();
         }
     }
 }

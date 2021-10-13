@@ -1,12 +1,16 @@
 ﻿using merchhunters.BLL.BLLContracts;
 using merchhunters.Common.Entities;
+using merchhunters.DAL.DalContracts;
 using System;
 
 namespace BLL
 {
     public class CatalogLogic : ICatalogLogic
     {
-        public CatalogLogic() { }
+        public CatalogLogic(ISelector selector)
+        {
+            _dataSelector = selector;
+        }
 
         ISelector _dataSelector;
 

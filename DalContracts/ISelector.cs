@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace merchhunters.DAL.DalContracts
 {
-    interface ISelector
+    public interface ISelector
     {
         Recomendation[] Select(Request request);
     }

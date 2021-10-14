@@ -1,5 +1,6 @@
 ﻿using merchhunters.BLL.BLLContracts;
 using merchhunters.Common.Entities;
+using merchhunters.DAL.DalContracts;
 using System;
 
 namespace BLL

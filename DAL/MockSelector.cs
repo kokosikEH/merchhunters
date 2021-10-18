@@ -2,7 +2,7 @@
 using merchhunters.DAL.DalContracts;
 using System;
 
-namespace DAL
+namespace merchhunters.DAL.DAL
 {
     public class MockSelector : ISelector
     {

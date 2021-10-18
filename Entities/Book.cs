@@ -4,7 +4,7 @@ namespace merchhunters.Common.Entities
 {
     public class Book
     {
-        public int RecId { get; set; } //модификатор доступа и стринг
+        public int RecId { get; set; } 
         public string Aut { get; set; }
         public string Title { get; set; }
         public string Place { get; set; }

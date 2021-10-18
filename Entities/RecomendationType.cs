@@ -8,9 +8,9 @@ namespace merchhunters.Common.Entities
 {
     public enum RecomendationType
     {
-        Basic,
-        Rubric,
-        Author,
-        Series
+        Basic = 0,
+        Rubric = 1,
+        Author = 2,
+        Series = 3,
     }
 }

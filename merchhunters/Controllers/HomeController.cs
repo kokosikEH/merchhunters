@@ -15,6 +15,7 @@ namespace merchhunters.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private RecomendationTypeViewModel _model = new RecomendationTypeViewModel();
         public static bool IsLogIn=false; 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -23,13 +24,20 @@ namespace merchhunters.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_model);
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
+        public IActionResult RecomendationTypeDropdown()
+        {
+            RecomendationTypeViewModel model = new RecomendationTypeViewModel();
+            return View("Index", model);
+        }
+
         public async Task<IActionResult> AccountAsync(int ID=-1)
         {
             ViewData["IsLogIn"] = IsLogIn;
